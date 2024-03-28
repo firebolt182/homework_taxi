@@ -18,7 +18,7 @@ public class Runner {
         taxiPark.takeOrder(client1, true);
         taxiPark.takeOrder(client2, true);
         taxiPark.takeOrder(client3, false);
-        taxiPark.takeOrder(client4, true);
+        taxiPark.takeOrder(client4, false);
         context.close();
     }
 }
