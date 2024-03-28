@@ -10,9 +10,9 @@ import java.util.Arrays;
 
 @Getter
 public class Car {
-    @Value("${car.nightBid")
+    @Value("${car.nightBid}")
     private int nightBid;
-    @Value("${car.dayBid")
+    @Value("${car.dayBid}")
     private int dayBid;
     private String carNumber;
     private BigDecimal incomeMoney = BigDecimal.ZERO;
