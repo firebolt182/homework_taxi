@@ -1,11 +1,10 @@
-package org.javaacademy.taxi;
+package org.javaacademy.project.taxi;
 
 import jakarta.annotation.PreDestroy;
 import lombok.Getter;
-import lombok.ToString;
-import org.javaacademy.Car;
-import org.javaacademy.Client;
-import org.javaacademy.IncorrectAddressException;
+import org.javaacademy.project.car.Car;
+import org.javaacademy.project.client.Client;
+import org.javaacademy.project.exception.IncorrectAddressException;
 import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Value;
 import java.math.BigDecimal;

@@ -1,4 +1,4 @@
-package org.javaacademy;
+package org.javaacademy.project.tariff;
 
 import lombok.Getter;
 

@@ -1,6 +1,7 @@
 package org.javaacademy;
 
-import org.javaacademy.taxi.TaxiPark;
+import org.javaacademy.project.client.Client;
+import org.javaacademy.project.taxi.TaxiPark;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;

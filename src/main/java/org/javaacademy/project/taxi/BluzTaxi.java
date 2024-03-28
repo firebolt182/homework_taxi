@@ -1,6 +1,6 @@
-package org.javaacademy.taxi;
+package org.javaacademy.project.taxi;
 
-import org.javaacademy.Car;
+import org.javaacademy.project.car.Car;
 import org.springframework.context.annotation.Profile;;
 import java.util.List;
 

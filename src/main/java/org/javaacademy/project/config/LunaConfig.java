@@ -1,12 +1,10 @@
-package org.javaacademy.config;
+package org.javaacademy.project.config;
 
-import org.javaacademy.Car;
-import org.javaacademy.taxi.LunaTaxi;
+import org.javaacademy.project.car.Car;
+import org.javaacademy.project.taxi.LunaTaxi;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 

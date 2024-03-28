@@ -1,6 +1,9 @@
-package org.javaacademy;
+package org.javaacademy.project.car;
 
 import lombok.Getter;
+import org.javaacademy.project.client.Client;
+import org.javaacademy.project.exception.IncorrectAddressException;
+import org.javaacademy.project.tariff.Tariff;
 import org.springframework.beans.factory.annotation.Value;
 import java.math.BigDecimal;
 import java.util.Arrays;
