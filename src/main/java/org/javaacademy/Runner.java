@@ -12,9 +12,9 @@ public class Runner {
         ConfigurableApplicationContext context = SpringApplication.run(Runner.class, args);
         TaxiPark taxiPark = context.getBean(TaxiPark.class);
         Client client1 = new Client("Кандикюля");
-        Client client4 = new Client("Строитель");
+        Client client2 = new Client("Строитель");
         Client client3 = new Client("Березовая Роща");
-        Client client2 = new Client("Ломоносов");
+        Client client4 = new Client("Ломоносов");
         taxiPark.takeOrder(client1, true);
         taxiPark.takeOrder(client2, true);
         taxiPark.takeOrder(client3, false);
