@@ -1,5 +1,5 @@
 car:
-  dayBid: 10
-  nightBid: 15
+  day: 10
+  night: 15
 taxiPark:
   name: LunaTaxi

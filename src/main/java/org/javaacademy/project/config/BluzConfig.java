@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 import java.util.Arrays;
+import java.util.List;
 
 @Configuration
 @Profile("bluz")
@@ -16,14 +17,15 @@ public class BluzConfig {
     public Car bluz1Car() {
         return new Car("bluz1");
     }
+
     @Bean
     public Car bluz2Car() {
         return new Car("bluz2");
     }
 
     @Bean
-    public BluzTaxi bluzTaxiCreate() {
-        return new BluzTaxi(Arrays.asList(bluz1Car(), bluz2Car()));
+    public BluzTaxi bluzTaxiCreate(List<Car> cars) {
+        return new BluzTaxi(cars);
     }
 
 }

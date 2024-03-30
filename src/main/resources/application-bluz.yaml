@@ -1,5 +1,5 @@
 car:
-  dayBid: 7
-  nightBid: 30
+  day: 7
+  night: 30
 taxiPark:
   name: BluzTaxi

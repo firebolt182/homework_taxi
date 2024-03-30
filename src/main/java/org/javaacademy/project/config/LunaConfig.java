@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 import java.util.Arrays;
+import java.util.List;
 
 @Configuration
 @Profile("luna")
@@ -28,8 +29,8 @@ public class LunaConfig {
     }
 
     @Bean
-    public LunaTaxi lunaTaxiCreate() {
-        return new LunaTaxi(Arrays.asList(luna1Car(), luna2Car(), luna3Car()));
+    public LunaTaxi lunaTaxiCreate(List<Car> cars) {
+        return new LunaTaxi(cars);
     }
 
 }

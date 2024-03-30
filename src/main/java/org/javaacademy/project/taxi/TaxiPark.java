@@ -23,8 +23,7 @@ public abstract class TaxiPark {
     }
 
     public void takeOrder(Client client, boolean isDay) {
-        Car car = cars.get(0);
-        cars.remove(car);
+        Car car = cars.remove(0);
         try {
             BigDecimal parkIncome = car.takeOrder(client, isDay);
             allIncomeMoney = allIncomeMoney.add(parkIncome);
@@ -38,10 +37,6 @@ public abstract class TaxiPark {
 
     @PreDestroy
     public void destroy() {
-        summarize();
-    }
-
-    private void summarize() {
         System.out.printf(name);
         System.out.println("Заработано : " + allIncomeMoney);
         for (Car car : cars) {

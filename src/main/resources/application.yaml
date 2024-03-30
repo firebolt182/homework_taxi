@@ -1,5 +1,5 @@
 car:
-  nightBid: 40
-  dayBid: 20
+  day: 20
+  night: 40
 taxiPark:
   name: somePark
